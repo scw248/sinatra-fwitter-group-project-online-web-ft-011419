@@ -1,0 +1,9 @@
+<% if !logged_in? %>
+	<h3>Sign Up</h3>
+	<form action="/signup" method="POST">
+		<input type="text" name="username" placeholder="Username:" required>
+	  <input type="text" name="email" placeholder="Email:" required>
+		<input type="password" name="password" placeholder="Password:" required>
+		<input type="submit" value="Sign Up">
+	</form>
+<% end %>

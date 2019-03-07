@@ -1,7 +1,8 @@
-<h2>Login</h2>
-
-<form action='/login' method='post'>
-      Username<input type="text" id="username" name="user[username]">
-      Password<input type="text" id="password" name="user[password]">
-      <input type="submit" id="submit">
-</form>
+<% if !logged_in? %>
+	<h3>Login</h3>
+	<form action="/login" method="POST">
+		<input type="text" name="username" placeholder="Username:">
+		<input type="password" name="password" placeholder="Password:">
+		<input type="submit" value="submit">
+	</form>
+<% end %>
