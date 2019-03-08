@@ -72,7 +72,7 @@ class ApplicationController < Sinatra::Base
       redirect to '/tweets/new'
     else
       @tweet = Tweet.create(:content => params["content"])
-      session[:user_id] = @tweet.user_id
+      @tweet.user_id = session[:user_id]
       @tweet.save
       
     erb :'/tweets/show_tweet'
