@@ -1,9 +1,13 @@
-<% if !logged_in? %>
-	<h3>Sign Up</h3>
-	<form action="/signup" method="POST">
-		<input type="text" name="username" placeholder="Username:" required>
-	  <input type="text" name="email" placeholder="Email:" required>
-		<input type="password" name="password" placeholder="Password:" required>
-		<input type="submit" value="Sign Up">
-	</form>
-<% end %>
+    <h1>Sign up for Fwitter</h1>
+    <form class="" action="/signup" method="post">
+      <label>Username:</label>
+      <input type="text" name="username" value="">
+      <br></br>
+      <label>Email:</label>
+      <input type="text" name="email" value="">
+      <br></br>
+      <label>Password:</label>
+      <input type="text" name="password" value="">
+      <br></br>
+      <input type="submit" name="submit" value="Sign Up">
+    </form>

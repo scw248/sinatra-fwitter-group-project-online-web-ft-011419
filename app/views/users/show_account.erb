@@ -1,6 +1,0 @@
-<% if logged_in? %>
-<% @user.tweets.each do |tweet| %>
-  <p><%= tweet.user.username %>: <%= tweet.content %></p>
-<% end %>
-<a href="/logout">Log Out</a>
-<% end %>
